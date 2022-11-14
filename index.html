@@ -1,90 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Portafolio</title>
         <meta charset="utf-8"/>
         <meta name="author" content="Marcos Trujillo"/>
         <meta name="description" content="Portafolio personal de las aplicaciones en desarrollo o completadas"/>
         <meta name="keywords" content="Aplicacion de Inventario, Marcos Trujillo, Desarrollos, App"/>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body> 
-    <div class="contenedor-header">
-        <div class="logo">
-            <a href="#"><img src="Imag/Logo.png" id="logo"></a>
+        <!-- Contenedor del menu encabezado -->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#"><img src="Imag/Logo.png" alt="imagen logo">MarcsATC</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#conoceme">Conoceme</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#desarrollos">Desarrollos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
         </div>
-        <div id="nav">
-            <ul>
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Conoceme">Conoceme</a></li>
-                <li><a href="#Conocimientos">Conocimientos</a></li>
-                <li><a href="#proyecto">Proyectos</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-                <div class="nav-respondive">
-                <i class="fa-solid fa-bars"></i>
+        <!-- Contenedor del Perfil -->
+        <section id="inicio" class="inicio">
+            <div class="contenedor-banner">
+                <div class="contenedor-img">
+                    <img src="Imag/mt.jpg" alt="foto de perfil"/>
+                </div>
+                <h1>Marcos A. Trujillo C.</h1>
+                <h2>Estudiante de Ingeniería en Sistema</h2>
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/marcos-antonio-trujillo-contreras-767026148/"><img src="Imag/linkedin (2).png" id="Linkedin"/></a>
+                    <a href="https://github.com/MarcsAntonio"><img src="Imag/Github.png" id="Github"/></a>
+                </div>
             </div>
-        </div>
-        <header id="perfil">
-            <img src="Imag/mt.jpg" id="perfil"/>
-        </header>
-        <nav id="contenedor-link">
-            <a href="https://www.linkedin.com/in/marcos-antonio-trujillo-contreras-767026148/"><img src="Imag/linkedin (2).png" id="Linkedin"/></a>
-            <a href="https://github.com/MarcsAntonio"><img src="Imag/Github.png" id="Github"/></a>
-        </nav>
-    </div>
-        <selection>
-            <article>
-                <h1>!Hola Soy Marcos A. Trujillo¡</h1>
-                <p>Soy un estudiante en ingeniería de sistema y un autodidacta como desarrollador sin experiencia laboral, ya que siempre he trabajado en el área de tecnología como Soporte Técnico, durante un aproximado de 6 años, y actualmente me encuentro en un aprendizaje contante sobre los distintos lenguajes de programación que me interesan, los cuales son; HTML, CSS, JavaScript, C# y SQLServer.</p>
+        </section>
+        <!-- Conoceme -->
+        <section id="conoceme" class="conoceme">
+            <div class="section-sobremi">
+                <h2>!Hola Soy Marcos A. Trujillo¡</h2>
+                <p>Soy un estudiante en ingeniería de sistemas y un autodidacta como desarrollador sin experiencia laboral, ya que siempre he trabajado en el área de tecnología como Soporte Técnico, durante un aproximado de 6 años, y actualmente me encuentro en un aprendizaje contante sobre los distintos lenguajes de programación que me interesan, los cuales son; HTML, CSS, JavaScript, C# y SQLServer.</p>
                 <p>Me encuentro ansioso de poder trabajar con una empresa como ustedes, aportando y desarrollando mejoras para el beneficio de la compañía, satisfaciendo la distintas necesidades que se presenten durante el desarrollo de la empresa.</p>
-            </article>
-            <article>
-                <h2>Conocimientos</h2>
-                <p></p>
-            </article>
-            <article>
-                <h2>Proyectos</h2>
-                <p></p>
-            </article>
-            <article>
-                <h2>Contactame</h2>
-                <!--"ACTION" va hacia donde se direccion la informacion "METHOD" forma de envio y proceso de la data "GET/POST"-->
-                <form action="" method="get">
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input name="nombre" id="nombre" required>
+                <div class="fila">
+                    <div class="col">
+                        <!-- Datos Personales -->
+                        <h3>Datos Personales:</h3>
+                        <ul>
+                            <li>
+                                <strong>Nacimiento</strong>
+                                <i class="fa-solid fa-cake-candles"></i>
+                                26-10-1997
+                            </li>
+                            <li>
+                                <strong>Celular</strong>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="https://wa.me/+584241317552">+58 424-1317552</a>
+                            </li>
+                            <li>
+                                <strong>Correo</strong>
+                                <i class="fa-solid fa-envelope"></i>
+                                marcostrujillo15@gmail.com
+                            </li>
+                            <li>
+                                <strong>Direccion</strong>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Caracas, Venezuela
+                            </li>
+                        </ul>
                     </div>
-                    <br>
-                    <div>
-                        <label for="correo">Correo</label>
-                        <input type="email" name="correo" id="correo" required>
+                        <!--Intereses-->
+                    <div class="col">
+                        <h3>Intereses:</h3>
+                        <div class="contenedor-intereses">
+                            <div class="cafe">
+                                <i class="fa-solid fa-mug-saucer"></i>
+                                <span>Cafe</span>
+                            </div>
+                            <div class="libros">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Libros</span>
+                            </div>
+                            <div class="viajar">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>Viajar</span>
+                            </div>
+                            <div class="carro">
+                                <i class="fa-solid fa-car"></i>
+                                <span>Carro</span>
+                            </div>
+                            <div class="juegos">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Juegos</span>
+                            </div>
+                            <div class="musica">
+                                <i class="fa-solid fa-music"></i>
+                                <span>Musica</span>
+                            </div>
+                            <div class="ejercicio">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <span>Ejercicio</span>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <div>
-                        <label for="telefono">Telefono</label>
-                        <input type="number" name="telefono" id="telefono" min="0" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label form="comentario">Comentario</label>
-                        <textarea name="comenatrio" id="comentario"></textarea>
-                    </div>
-                    <br>
-                    <button type="reset">Reset</button>
-                    <button type="submit">Enviar</button>
-                </form>
-            </article>
-        </selection>
+                </div>
+            </div>
+            <button>
+                
+            </button>
+        </section>
+        <select class="habilidades" id="habilidades">
+            <h2>Habilidades</h2>
+            <p></p>
+        </select>
+        <select class="desarrollos" id="desarrollos">
+            <h2>Desarrollos</h2>
+            <p></p>
+        </select>
+        <select class="contacto" id="contacto">
+            <h2>Contactame</h2>
+            <!--"ACTION" va hacia donde se direccion la informacion "METHOD" forma de envio y proceso de la data "GET/POST"-->
+            <form action="" method="get">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input name="nombre" id="nombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="number" name="telefono" id="telefono" min="0" required>
+                </div>
+                <br>
+                <div>
+                    <label form="comentario">Comentario</label>
+                    <textarea name="comenatrio" id="comentario"></textarea>
+                </div>
+                <br>
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar</button>
+            </form>
+        </select>
+        <!--  -->
         <aside>
-            <ul>
-                <li>Contacto</li>
-                <p>Correo: marcostrujillo15@gmail.com</p>
-                <p>Telefono: +58 424-1317552</p>
-            </ul>
         </aside>
         <footer>
-            Derechos reservados 31-05-2022
         </footer>
     </body>
 </html>
