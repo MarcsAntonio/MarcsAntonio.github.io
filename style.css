@@ -179,4 +179,39 @@ html{
     font-weight: bold;
     border-radius:5px;
 }
-
+.conoceme .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.conoceme .fila .col .contenedor-intereses .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: #148D8D;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.conoceme .fila .col .contenedor-intereses .intereses:hover{
+    color: #1a4a5a;
+}
+.conoceme .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.conoceme button{
+    cursor: pointer;
+    background-color: #1a4a5a;
+    border: 4px solid #148D8D;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
