@@ -31,7 +31,7 @@
             </header>
         </div>
         <!-- Contenedor del Perfil -->
-        <section id="inicio" class="inicio">
+        <section class="inicio">
             <div class="contenedor-banner">
                 <div class="contenedor-img">
                     <img src="Imag/mt.jpg" alt="foto de perfil"/>
@@ -45,8 +45,8 @@
             </div>
         </section>
         <!-- Conoceme -->
-        <section id="conoceme" class="conoceme">
-            <div class="section-sobremi">
+        <section class="conoceme">
+            <div class="contenedor-sobremi">
                 <h2>!Hola Soy Marcos A. Trujillo¡</h2>
                 <p>Soy un estudiante en ingeniería de sistemas y un autodidacta como desarrollador sin experiencia laboral, ya que siempre he trabajado en el área de tecnología como Soporte Técnico, durante un aproximado de 6 años, y actualmente me encuentro en un aprendizaje contante sobre los distintos lenguajes de programación que me interesan, los cuales son; HTML, CSS, JavaScript, C# y SQLServer.</p>
                 <p>Me encuentro ansioso de poder trabajar con una empresa como ustedes, aportando y desarrollando mejoras para el beneficio de la compañía, satisfaciendo la distintas necesidades que se presenten durante el desarrollo de la empresa.</p>
@@ -82,10 +82,6 @@
                         <h3>Intereses:</h3>
                         <div class="contenedor-intereses">
                             <div class="intereses">
-                                <i class="fa-solid fa-mug-saucer"></i>
-                                <span>Cafe</span>
-                            </div>
-                            <div class="intereses">
                                 <i class="fa-solid fa-book"></i>
                                 <span>Libros</span>
                             </div>
@@ -94,8 +90,8 @@
                                 <span>Viajar</span>
                             </div>
                             <div class="intereses">
-                                <i class="fa-solid fa-car"></i>
-                                <span>Carro</span>
+                                <i class="fa-solid fa-code"></i>
+                                <span>Creacion</span>
                             </div>
                             <div class="intereses">
                                 <i class="fa-solid fa-gamepad"></i>
@@ -109,17 +105,79 @@
                                 <i class="fa-solid fa-dumbbell"></i>
                                 <span>Ejercicio</span>
                             </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <span>Senderismo</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <button>
-                Curriculum
+                Curriculum <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
             </button>
         </section>
-        <section class="habilidades" id="habilidades">
-            <h2>Habilidades</h2>
-            <p></p>
+        <section class="habilidades">
+            <div class="contenedor-habilidades">
+                <h2>Habilidades</h2>
+                <div class="fila">
+                    <div class="col">
+                        <h3>Lenguajes</h3>
+                        <div class="habilidad">
+                            <span>C#</span>
+                            <div class="barra-habilidades">
+                                <div class="progreso CSharp">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>HTML & CSS</span>
+                            <div class="barra-habilidades">
+                                <div class="progreso HTMLCSS">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>Git</span>
+                            <div class="barra-habilidades">
+                                <div class="progreso Git">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Aspectos</h3>
+                        <div class="habilidad">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-habilidades">
+                                <div class="progreso TBE">
+                                    <span>97%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>Entusiasta</span>
+                            <div class="barra-habilidades">
+                                <div class="progreso Ent">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>Creativo</span>
+                            <div class="barra-habilidades">
+                                <div class="progreso Cre">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
         </section>
         <section class="desarrollos" id="desarrollos">
             <h2>Desarrollos</h2>
@@ -127,37 +185,35 @@
             <p></p>
         </section>
         <section class="contacto" id="contacto">
-
-            <h2>Contactame</h2>
-            <!--"ACTION" va hacia donde se direccion la informacion "METHOD" forma de envio y proceso de la data "GET/POST"-->
-            <form action="" method="get">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input name="nombre" id="nombre" required>
+            <div class="contenedor-contacto">
+                <h2>Contactame</h2>
+                <div class="fila">
+                    <!--Datos-->
+                    <div class="col">
+                        <input type="text" name="Usuario" placeholder="Nombre y Apellido" id="nombre" required>
+                        <input type="email" name="Correo" placeholder="Direccion de correo" id="correo" required>
+                        <input type="number" name="Numero de Celular" placeholder="Numero de Telefono" id="telefono" min="0" required>
+                        <textarea placeholder="Mensaje" cols="30" rows="5" name="comenatrio" id="comentario"></textarea>
+                        <div class="botones">
+                            <button type="reset">
+                                Limpiar
+                                <span class="overlay"></span>
+                            </button>
+                            <button type="submit" id="submit">
+                                Enviar mensaje
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Mapa-->
+                    <div class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7846.151218393982!2d-66.87967472554894!3d10.49470591943864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58e2736a4b19%3A0x971709a23ba9651a!2sLas%20Delicias%2C%20Caracas%201050%2C%20Distrito%20Capital!5e0!3m2!1ses!2sve!4v1669314837318!5m2!1ses!2sve" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <label for="correo">Correo</label>
-                    <input type="email" name="correo" id="correo" required>
-                </div>
-                <br>
-                <div>
-                    <label for="telefono">Telefono</label>
-                    <input type="number" name="telefono" id="telefono" min="0" required>
-                </div>
-                <br>
-                <div>
-                    <label form="comentario">Comentario</label>
-                    <textarea name="comenatrio" id="comentario"></textarea>
-                </div>
-                <br>
-                <button type="reset">Reset</button>
-                <button type="submit">Enviar</button>
-            </form>
+            </div>
         </section>
-        <!--  -->
-        <aside>
-        </aside>
         <footer>
         </footer>
     </body>

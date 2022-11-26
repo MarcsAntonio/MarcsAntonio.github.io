@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2? family= Righteous & family= Work+Sans:wght@100;300;400;600;800 & display=swap');
-
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -121,6 +120,8 @@ html{
     color: #148D8D;
 }*/
 
+/*Contenedor de conoceme*/
+
 .conoceme{
     background-color:#1e2326;
     color: #fff;
@@ -141,16 +142,13 @@ html{
     line-height: 20px;
     margin-bottom: 20px;
 }
-
-.conoceme .section-sobremi p span{
+.conoceme .contenedor-sobremi p span{
     color: #148D8D;
     font-weight: bold;
 }
-
 .conoceme .fila{
     display: flex;
 }
-
 .conoceme .fila .col{
     width: 50%;
 }
@@ -162,7 +160,6 @@ html{
 .conoceme .fila .col ul{
     list-style: none;
 }
-
 .conoceme .fila .col ul li{
     margin: 12px 0;
 }
@@ -172,7 +169,6 @@ html{
     color: #148D8D;
     width: 130px;
 }
-
 .conoceme .fila .col ul li span{
     background-color: #148D8D;
     padding: 3px;
@@ -204,14 +200,204 @@ html{
 }
 .conoceme button{
     cursor: pointer;
-    background-color: #1a4a5a;
-    border: 4px solid #148D8D;
+    background-color: transparent;
+    border: 4px solid #fff;
     width: fit-content;
     display: block;
-    margin: 20px auto;
+    margin: auto;
     padding: 10px 22px;
     font-size: 16px;
     color: #fff;
     position: relative;
     z-index: 10;
+    border-radius: 20px;
+}
+.conoceme button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 1s;
+    border-radius: 15px;
+}
+.conoceme button:hover .overlay{
+    background-color: #1cb698;
+    width: 100%;
+}
+
+/*Contenedor de habilidades*/
+
+.habilidades{
+    background-color: #1a4a5a;
+    color: #fff;
+    padding: 50px 20px;
+}
+.habilidades .contenedor-habilidades{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.habilidades .contenedor-habilidades .fila{
+    display: flex;
+}
+.habilidades .contenedor-habilidades .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.habilidades .contenedor-habilidades .fila .col h3{
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10%;
+}
+.habilidades .contenedor-habilidades .fila .col .habilidad > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+.habilidades .contenedor-habilidades .fila .col .habilidad .barra-habilidades{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.habilidades .contenedor-habilidades .fila .col .habilidad .barra-habilidades .progreso{
+    background-color: #1cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.habilidades .barra-habilidades span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.habilidades .contenedor-habilidades .fila .col .habilidad .CSharp{
+    width: 0%;
+    animation: 2s CSharp forwards;
+}
+@keyframes CSharp{
+    0%{width: 0%;}
+    100%{width: 40%;} 
+}
+.habilidades .contenedor-habilidades .fila .col .habilidad .HTMLCSS{
+    width: 0%;
+    animation: 2s HTMLCSS forwards;
+}
+@keyframes HTMLCSS{
+    0%{width: 0%;}
+    100%{width: 70%;} 
+}
+.habilidades .contenedor-habilidades .fila .col .habilidad .Git{
+    width: 0%;
+    animation: 2s Git forwards;
+}
+@keyframes Git{
+    0%{width: 0%;}
+    100%{width: 80%;} 
+}
+.habilidades .contenedor-habilidades .fila .col .habilidad .TBE{
+    width: 0%;
+    animation: 2s TBE forwards;
+}
+@keyframes TBE{
+    0%{width: 0%;}
+    100%{width: 97%;} 
+}
+.habilidades .contenedor-habilidades .fila .col .habilidad .Ent{
+    width: 0%;
+    animation: 2s Ent forwards;
+}
+@keyframes Ent{
+    0%{width: 0%;}
+    100%{width: 90%;} 
+}
+.habilidades .contenedor-habilidades .fila .col .habilidad .Cre{
+    width: 0%;
+    animation: 2s Cre forwards;
+}
+@keyframes Cre{
+    0%{width: 0%;}
+    100%{width: 95%;} 
+}
+
+/*Contenedor de desarrollos*/
+
+.desarrollos{
+    background-color: #148d8d7e;
+}
+
+/*Contenedor de contacto*/
+
+.contacto{
+    background-image: url(/Imag/blue-the-world-black-background-world-map-mainland-hd-wallpaper-preview.jpg);
+    background-position: center;
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenedor-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 95%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #148d8d7e;
+    color: #fff;
+    font-size: 15px;
+}
+.contenedor-contacto .col .botones button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 4px solid #fff;
+    width: fit-content;
+    display: inline-block;
+    margin: 1%;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contenedor-contacto .col .botones{
+    text-align: right;
+    margin-right: 25px;
+}
+.contenedor-contacto .col iframe{
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
