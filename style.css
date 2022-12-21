@@ -31,15 +31,18 @@ html{
 .contenedor-header header .logo a img{
     width: 40px;
     height: 40px;
+    margin-left: 14px;
     border-radius: 30px;
+    align-items: center;
 }
 .contenedor-header header .logo a{
-    font-family: 'Righteous';
-    text-align: none;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     color: #fff;
     margin: 0 15px;
     padding: 3px;
-    transition: .5s;
+    transition: .2s;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -63,6 +66,7 @@ html{
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    object-fit: ;
 }
 
 /* Contenedor del Perfil */
