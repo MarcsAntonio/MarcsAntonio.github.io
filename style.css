@@ -15,6 +15,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    color: #fff;
 }
 /*Menu*/
 .contenedor-header{
@@ -78,7 +79,6 @@ html{
     background: linear-gradient(to top,#148D8D, #1a4a5a), url(Imag/mt.jpg);
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     color: #fff;
     display: flex;
     align-items: center;
@@ -332,7 +332,7 @@ html{
 /*Contenedor de herramientas*/
 
 .herramientas{
-    background-color: #148d8d7e;
+    background-color: #1e2326;
     height: 100vh;
     padding: 50px 20px;
 }
@@ -343,8 +343,11 @@ html{
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    scroll-behavior: smooth;
 }
 .contenido{
+    background-color: #1a4a5a;
+    border-radius: 8px;
     margin: auto;
 }
 .contenido .img-cont{
@@ -352,34 +355,43 @@ html{
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #0bdddd;
 }
 .contenido .img-cont img{
     margin: 1px;
     padding: 5px;
-    width: 7em;
+    width: 8em;
     height: 7em;
     align-self: center;
 }
 .contenido .name{
-    background-color: #046868;
+    /* background-color: #046868; */
     text-align: center;
     height: 2em;
 }
 
 /*Contenedor de desarrollos*/
 .aplicaciones{
-    background-color: #148d8d7e;
+    background-color: #1a4a5a;
     height: 100vh;
     padding: 50px 20px;
 }
-.aplicaciones .container-app{
-    justify-content: center;
+.aplicaciones .contenido-app{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.container-app .contenido-app p{
-    background-color: #131517;
+.aplicaciones .contenido-app .ico-load i{
+    margin-top: 100px;
+    font-size: 90px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.container-app .contenido-app span{
     text-justify:auto;
     align-items: center;
+    margin-top: 50px;
+    font-size: 50px;
 }
 
 /*Contenedor de contacto*/
