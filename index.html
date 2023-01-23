@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <title>Portafolio</title>
+        <link rel="shortcut icon" type="png" href="Imag/Logo.png">
         <meta charset="utf-8"/>
         <meta name="author" content="Marcos Trujillo"/>
         <meta name="description" content="Portafolio personal de las aplicaciones en desarrollo o completadas"/>
@@ -11,13 +12,17 @@
     </head>
     <body> 
         <!-- Contenedor del menu encabezado -->
-        <div class="contenedor-header">
-            <header>
+        <header>
+            <div class="nav-header">
                 <div class="logo">
                     <a href="#inicio"><img src="Imag/Logo.png" alt="imagen logo">MarcsATC</a>
                 </div>
-                <nav id="nav">
-                    <ul>
+                
+                <input type="checkbox" id="toggler">
+                <label for="toggler" class="ico"><i class="fa-solid fa-bars"></i></label>
+                
+                <nav class="menu-nav">
+                    <ul class="list-nav">
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#conoceme">Conoceme</a></li>
                         <li><a href="#habilidades">Habilidades</a></li>
@@ -26,11 +31,8 @@
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
-                <div class="nav-responsive">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </header>
-        </div>
+            </div>
+        </header>        
         <!-- Contenedor del Perfil -->
         <section class="inicio" id="inicio">
             <div class="contenedor-banner">
@@ -128,7 +130,7 @@
                         <div class="habilidad">
                             <span>C#</span>
                             <div class="barra-habilidades">
-                                <div class="progreso CSharp">
+                                <div class="progreso">
                                     <span>40%</span>
                                 </div>
                             </div>
@@ -136,7 +138,7 @@
                         <div class="habilidad">
                             <span>HTML & CSS</span>
                             <div class="barra-habilidades">
-                                <div class="progreso HTMLCSS">
+                                <div class="progreso">
                                     <span>70%</span>
                                 </div>
                             </div>
@@ -144,7 +146,7 @@
                         <div class="habilidad">
                             <span>Git</span>
                             <div class="barra-habilidades">
-                                <div class="progreso Git">
+                                <div class="progreso">
                                     <span>80%</span>
                                 </div>
                             </div>
@@ -155,7 +157,7 @@
                         <div class="habilidad">
                             <span>Trabajo en Equipo</span>
                             <div class="barra-habilidades">
-                                <div class="progreso TBE">
+                                <div class="progreso">
                                     <span>97%</span>
                                 </div>
                             </div>
@@ -163,7 +165,7 @@
                         <div class="habilidad">
                             <span>Entusiasta</span>
                             <div class="barra-habilidades">
-                                <div class="progreso Ent">
+                                <div class="progreso">
                                     <span>90%</span>
                                 </div>
                             </div>
@@ -171,7 +173,7 @@
                         <div class="habilidad">
                             <span>Creativo</span>
                             <div class="barra-habilidades">
-                                <div class="progreso Cre">
+                                <div class="progreso">
                                     <span>95%</span>
                                 </div>
                             </div>
@@ -278,5 +280,6 @@
         </section>
         <footer>
         </footer>
+        <script src="javascript.js"></script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 *{
-    /* box-sizing: border-box; */
-    font-family: 'Work Sans';
+    /* box-sizing: border-box;  */
+    font-family: 'Righteous';
     margin: 0;
     padding: 0;
 }
@@ -9,39 +9,38 @@
 html{
     scroll-behavior: smooth;
 }
-
+section{
+    padding: 50px 90px;
+}
 .conoceme h2,.habilidades h2,.herramientas h2,.aplicaciones h2,.contacto h2{
     font-size: 48px;
-    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
     color: #fff;
 }
+
 /*Menu*/
-.contenedor-header{
+header{
     background: #1e2326;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
 }
-.contenedor-header header{
-    max-width: inherit;
-    margin: auto;
+.nav-header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 5px 5px;
+    justify-content: space-between;
+    padding: 1.5px;
 }
-.contenedor-header header .logo a img{
+.nav-header .logo a img{
     width: 40px;
     height: 40px;
     margin-left: 14px;
     border-radius: 30px;
     align-items: center;
 }
-.contenedor-header header .logo a{
+.nav-header .logo a{
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -51,34 +50,58 @@ html{
     transition: .2s;
     text-decoration: none;
 }
-.contenedor-header header ul{
-    display: flex;
+
+.nav-header .menu-nav .list-nav{
     list-style: none;
+    display: flex;
+    gap: 25px;
 }
-.contenedor-header header nav ul li a{
-    text-align: none;
+.nav-header .menu-nav .list-nav li a{
+    /* text-align: none; */
     color: #fff;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
     text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover{
+
+.nav-header .menu-nav .list-nav li a:hover{
     color: #148D8D;
 }
-.nav-responsive{
+
+.ico{ 
     background-color: #1a4a5a;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    visibility: hidden;
+    
 }
+
+#toggler, .navbar label{
+    display: none;
+}
+
+/* Reparar el ajuste automatico que se realiza, menores a 999px, no me permite configurar a para telefono */
+@media screen and (max-width: 999px) {
+    div{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* Contenedor del Perfil */
 .inicio{
     background: linear-gradient(to top,#148D8D, #1a4a5a), url(Imag/mt.jpg);
     background-size: cover;
-    height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -87,7 +110,7 @@ html{
 .inicio .contenedor-banner{
     padding: 2.5em;
     background-color: #1e2326;
-    max-width: 15em;
+    max-width: 25em;
     margin: auto;
     text-align: center;
     border-radius: 40px;
@@ -126,8 +149,6 @@ html{
 .conoceme{
     background-color:#1e2326;
     color: #fff;
-    padding: 50px 20px;
-    height: 100vh;
 }
 .conoceme .section-sobremi{
     max-width: 1150px;
@@ -229,8 +250,6 @@ html{
 .habilidades{
     background-color: #1a4a5a;
     color: #fff;
-    padding: 50px 20px;
-    height: 100vh;
 }
 .habilidades .contenedor-habilidades{
     max-width: 1100px;
@@ -280,7 +299,7 @@ html{
     right: -15px;
     font-size: 14px;
 }
-.habilidades .contenedor-habilidades .fila .col .habilidad .CSharp{
+.habilidad .CSharp{
     width: 0%;
     animation: 2s CSharp forwards;
 }
@@ -288,15 +307,15 @@ html{
     0%{width: 0%;}
     100%{width: 40%;} 
 }
-.habilidades .contenedor-habilidades .fila .col .habilidad .HTMLCSS{
+.habilidad .htmlcss{
     width: 0%;
-    animation: 2s HTMLCSS forwards;
+    animation: 2s htmlcss forwards;
 }
-@keyframes HTMLCSS{
+@keyframes htmlcss{
     0%{width: 0%;}
     100%{width: 70%;} 
 }
-.habilidades .contenedor-habilidades .fila .col .habilidad .Git{
+.habilidad .Git{
     width: 0%;
     animation: 2s Git forwards;
 }
@@ -304,7 +323,7 @@ html{
     0%{width: 0%;}
     100%{width: 80%;} 
 }
-.habilidades .contenedor-habilidades .fila .col .habilidad .TBE{
+.habilidad .TBE{
     width: 0%;
     animation: 2s TBE forwards;
 }
@@ -312,7 +331,7 @@ html{
     0%{width: 0%;}
     100%{width: 97%;} 
 }
-.habilidades .contenedor-habilidades .fila .col .habilidad .Ent{
+.habilidad .Ent{
     width: 0%;
     animation: 2s Ent forwards;
 }
@@ -320,7 +339,7 @@ html{
     0%{width: 0%;}
     100%{width: 90%;} 
 }
-.habilidades .contenedor-habilidades .fila .col .habilidad .Cre{
+.habilidad .Cre{
     width: 0%;
     animation: 2s Cre forwards;
 }
@@ -333,22 +352,22 @@ html{
 
 .herramientas{
     background-color: #1e2326;
-    height: 100vh;
-    padding: 50px 20px;
 }
 
 .container-tools{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 40px;
     scroll-behavior: smooth;
 }
 .contenido{
-    background-color: #1a4a5a;
-    border-radius: 8px;
-    margin: auto;
+    
+    border-radius: 28px;
+    background: linear-gradient(225deg, #202529, #1b2022);
+    box-shadow:  -26px 26px 52px #0e1012, 26px -26px 52px #2e363a;
 }
 .contenido .img-cont{
     display: flex;
@@ -367,12 +386,12 @@ html{
     /* background-color: #046868; */
     text-align: center;
     height: 2em;
+    color: #fff;
 }
 
 /*Contenedor de desarrollos*/
 .aplicaciones{
     background-color: #1a4a5a;
-    height: 100vh;
     padding: 50px 20px;
 }
 .aplicaciones .contenido-app{
@@ -397,12 +416,9 @@ html{
 /*Contenedor de contacto*/
 
 .contacto{
-    background-image: url(/Imag/blue-the-world-black-background-world-map-mainland-hd-wallpaper-preview.jpg);
     background-position: center;
     background-color: #1e2326;
     color: #fff;
-    padding: 50px 0;
-    height: 100vh;
 }
 .contacto .contenedor-contacto{
     max-width: 1100px;
