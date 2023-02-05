@@ -1,22 +1,24 @@
 *{
-    /* box-sizing: border-box;  */
     font-family: 'Righteous';
+    color: #fff;
     margin: 0;
     padding: 0;
+    font-size: 100%;
 }
 
 /*te desliza a la pequeña parte de la pagina en la barra superior*/
 html{
     scroll-behavior: smooth;
+    display: flex;
 }
+
 section{
-    padding: 50px 90px;
+    padding: 3.5em 6em;
 }
 .conoceme h2,.habilidades h2,.herramientas h2,.aplicaciones h2,.contacto h2{
-    font-size: 48px;
+    font-size: 3rem;
     text-align: center;
-    padding: 20px 0;
-    color: #fff;
+    padding: 0.5em ;
 }
 
 /*Menu*/
@@ -31,20 +33,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5px;
+    padding: 0.2rem;
 }
 .nav-header .logo a img{
-    width: 40px;
-    height: 40px;
-    margin-left: 14px;
-    border-radius: 30px;
-    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    display: flex;
+    align-self: center;
 }
 .nav-header .logo a{
     display: flex;
     flex-direction: column;
     justify-items: center;
-    color: #fff;
     margin: 0 15px;
     padding: 3px;
     transition: .2s;
@@ -58,7 +59,6 @@ header{
 }
 .nav-header .menu-nav .list-nav li a{
     /* text-align: none; */
-    color: #fff;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -69,34 +69,17 @@ header{
     color: #148D8D;
 }
 
-.ico{ 
+.ico-menu{ 
     background-color: #1a4a5a;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    cursor: pointer;
-    visibility: hidden;
-    
+    overflow: hidden;
 }
 
-#toggler, .navbar label{
+#toggler, .nav-header label{
     display: none;
 }
-
-/* Reparar el ajuste automatico que se realiza, menores a 999px, no me permite configurar a para telefono */
-@media screen and (max-width: 999px) {
-    div{
-        display: none;
-    }
-}
-
-
-
-
-
-
-
-
 
 /* Contenedor del Perfil */
 .inicio{
@@ -108,7 +91,7 @@ header{
 }
 
 .inicio .contenedor-banner{
-    padding: 2.5em;
+    padding: 2.5em 1em 1em 1em;
     background-color: #1e2326;
     max-width: 25em;
     margin: auto;
@@ -116,7 +99,7 @@ header{
     border-radius: 40px;
 }
 .inicio .contenedor-banner img{
-    margin-top: 40px;
+    margin-top: 40em;
     border: 0.4em solid #fff;
     display: block;
     width: 80%;
@@ -124,15 +107,20 @@ header{
     border-radius: 100%;
 }
 .inicio .contenedor-banner h1{
-    margin-top: 40px;
-    font-size: 25px;
-    font-family: 'Righteous';
+    margin-top: 1em;
+    font-size: 2rem;
 }
-.inicio.contenedor-banner h2{
-    font-size: 15px;
+.inicio .contenedor-banner h2{
+    font-size: 1.5rem;
     font-weight: normal;
 }
+
+.link{
+    padding: 1em;
+}
+
 .inicio .contenedor-banner .link a img{
+    margin-top: 5rem;
     color:#fff;
     display: inline-block;
     text-decoration: none;
@@ -150,15 +138,10 @@ header{
     background-color:#1e2326;
     color: #fff;
 }
-.conoceme .section-sobremi{
-    max-width: 1150px;
-    margin: auto;
-}
 
-.conoceme .section-sobremi p{
-    font: 18px;
-    line-height: 20px;
-    margin-bottom: 20px;
+.conoceme .contenedor-sobremi p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 .conoceme .contenedor-sobremi p span{
     color: #148D8D;
@@ -171,8 +154,7 @@ header{
     width: 50%;
 }
 .conoceme .fila .col h3{
-    font-size:28px;
-    font-family: 'Righteous';
+    font-size: 1rem;
     margin-bottom: 25px;
 }
 .conoceme .fila .col ul{
@@ -213,7 +195,7 @@ header{
     color: #1a4a5a;
 }
 .conoceme .fila .col .contenedor-intereses .intereses i{
-    font-size: 30px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 .conoceme button{
@@ -299,11 +281,11 @@ header{
     right: -15px;
     font-size: 14px;
 }
-.habilidad .CSharp{
+.habilidad .cshart{
     width: 0%;
-    animation: 2s CSharp forwards;
+    animation: 2s cshart forwards;
 }
-@keyframes CSharp{
+@keyframes cshart{
     0%{width: 0%;}
     100%{width: 40%;} 
 }
@@ -315,35 +297,35 @@ header{
     0%{width: 0%;}
     100%{width: 70%;} 
 }
-.habilidad .Git{
+.habilidad .git{
     width: 0%;
-    animation: 2s Git forwards;
+    animation: 2s git forwards;
 }
-@keyframes Git{
+@keyframes git{
     0%{width: 0%;}
     100%{width: 80%;} 
 }
-.habilidad .TBE{
+.habilidad .tbe{
     width: 0%;
-    animation: 2s TBE forwards;
+    animation: 2s tbe forwards;
 }
-@keyframes TBE{
+@keyframes tbe{
     0%{width: 0%;}
     100%{width: 97%;} 
 }
-.habilidad .Ent{
+.habilidad .ent{
     width: 0%;
-    animation: 2s Ent forwards;
+    animation: 2s ent forwards;
 }
-@keyframes Ent{
+@keyframes ent{
     0%{width: 0%;}
     100%{width: 90%;} 
 }
-.habilidad .Cre{
+.habilidad .cre{
     width: 0%;
-    animation: 2s Cre forwards;
+    animation: 2s cre forwards;
 }
-@keyframes Cre{
+@keyframes cre{
     0%{width: 0%;}
     100%{width: 95%;} 
 }
@@ -359,7 +341,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 2em 1.5em;
     padding: 40px;
     scroll-behavior: smooth;
 }
@@ -392,7 +374,6 @@ header{
 /*Contenedor de desarrollos*/
 .aplicaciones{
     background-color: #1a4a5a;
-    padding: 50px 20px;
 }
 .aplicaciones .contenido-app{
     display: flex;
@@ -464,4 +445,32 @@ header{
     display: flex;
     width: 100%;
     height: 100%;
+}
+
+/* Reparar el ajuste automatico que se realiza, a partir de 999px, no me permite configurar a para telefono */
+@media screen and (max-width: 999px) {
+    .menu-nav{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list-nav{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .nav-header label{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #toggler:checked ~ .menu-nav{
+        max-height: 100%;
+    }
+    .ico{
+        overflow: visible;
+    }
+    .nav-header{
+        flex-wrap: wrap;
+    }
 }
