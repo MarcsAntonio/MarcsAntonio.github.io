@@ -10,7 +10,13 @@
         <meta name="description" content="Portafolio personal de las aplicaciones en desarrollo o completadas"/>
         <meta name="keywords" content="Aplicacion de Inventario, Marcos Trujillo, Desarrollos, App"/>
         <link rel="stylesheet" href="style.css">
+        <!-- Iconos de imagenes -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google-Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">
+
     </head>
     <body> 
         <!-- Contenedor del menu encabezado -->
@@ -42,7 +48,7 @@
                     <img src="Imag/mt.jpg" alt="foto de perfil"/>
                 </div>
                 <h1>Marcos A. Trujillo C.</h1>
-                <h2>Estudiante de Ingeniería en Sistema</h2>
+                <h2>Estudiante en Ingeniería de Sistemas</h2>
                 <div class="link">
                     <a href="https://www.linkedin.com/in/marcos-antonio-trujillo-contreras-767026148/"><img src="Imag/linkedin (2).png" id="Linkedin"/></a>
                     <a href="https://github.com/MarcsAntonio"><img src="Imag/Github.png" id="Github"/></a>
@@ -124,15 +130,15 @@
             </button>
         </section>
         <section class="habilidades" id="habilidades">
+            <h2>Habilidades</h2>
             <div class="contenedor-habilidades">
-                <h2>Habilidades</h2>
                 <div class="fila">
                     <div class="col">
                         <h3>Lenguajes</h3>
                         <div class="habilidad">
                             <span>C#</span>
                             <div class="barra-habilidades">
-                                <div class="progreso">
+                                <div class="progreso cshart">
                                     <span>40%</span>
                                 </div>
                             </div>
@@ -140,7 +146,7 @@
                         <div class="habilidad">
                             <span>HTML & CSS</span>
                             <div class="barra-habilidades">
-                                <div class="progreso">
+                                <div class="progreso htmlcss">
                                     <span>70%</span>
                                 </div>
                             </div>
@@ -148,7 +154,7 @@
                         <div class="habilidad">
                             <span>Git</span>
                             <div class="barra-habilidades">
-                                <div class="progreso">
+                                <div class="progreso git">
                                     <span>80%</span>
                                 </div>
                             </div>
@@ -159,7 +165,7 @@
                         <div class="habilidad">
                             <span>Trabajo en Equipo</span>
                             <div class="barra-habilidades">
-                                <div class="progreso">
+                                <div class="progreso tbe">
                                     <span>97%</span>
                                 </div>
                             </div>
@@ -167,7 +173,7 @@
                         <div class="habilidad">
                             <span>Entusiasta</span>
                             <div class="barra-habilidades">
-                                <div class="progreso">
+                                <div class="progreso ent">
                                     <span>90%</span>
                                 </div>
                             </div>
@@ -175,7 +181,7 @@
                         <div class="habilidad">
                             <span>Creativo</span>
                             <div class="barra-habilidades">
-                                <div class="progreso">
+                                <div class="progreso cre">
                                     <span>95%</span>
                                 </div>
                             </div>
@@ -185,8 +191,8 @@
             </div>
         </section>
         <section class="herramientas" id="herramientas">
+            <h2>Herramientas</h2>
             <div class="container">
-                <h2>Herramientas</h2>
                 <div class="container-tools">
                     <div class="contenido" id="contenido">
                         <div class="img-cont">
@@ -240,8 +246,8 @@
             </div>
         </section>
         <section class="aplicaciones" id="aplicaciones">
+            <h2>Aplicaciones</h2>
             <div class="container-app">
-                <h2>Aplicaciones</h2>
                 <div class="contenido-app">
                     <div class="ico-load">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -251,10 +257,10 @@
             </div>
         </section>
         <section class="contacto" id="contacto">
+            <h2>Contáctame</h2>
             <div class="contenedor-contacto">
-                <h2>Contáctame</h2>
                 <div class="fila">
-                    <!--Datos-->
+                    <!-- Input -->
                     <div class="col">
                         <input type="text" name="Usuario" placeholder="Nombre y Apellido" id="nombre" required>
                         <input type="email" name="Correo" placeholder="Direccion de correo" id="correo" required>
@@ -280,8 +286,18 @@
                 </div>
             </div>
         </section>
+        <script src="/javascript.js"></script>
         <footer>
+            <!-- Boton para subir directamente al menu principal -->
+            <div class="contenedor-top">
+                <div class="button_star"></div>
+            </div>
+
+            <div class="link">
+                <div class="conexion1"></div>
+                <div class="conexion2"></div>
+                <div class="conexion3"></div>
+            </div>
         </footer>
-        <script src="javascript.js"></script>
     </body>
 </html>
