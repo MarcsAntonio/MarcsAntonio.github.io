@@ -362,7 +362,7 @@ header{
     
     border-radius: 28px;
     background: linear-gradient(225deg, #202529, #1b2022);
-    box-shadow:  -26px 26px 52px #0e1012, 26px -26px 52px #2e363a;
+    box-shadow:  -26px 26px 52px #0e1012;
 }
 .contenido .img-cont{
     display: flex;
@@ -445,23 +445,32 @@ header{
     height: 100%;
 }
 
+/*footer */
+footer{
+    background-color: #1b2022;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: space-evenly;
+}
+
+.footer-link{
+    display: flex;
+    gap: 15px;
+}
+
+/*Boton de rapido de inicio*/
 .button_star{
     background-color: #1cb698;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 150px;
 }
 
 .contenedor-top{
-    display: flex;
-    position: static;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-}
-footer{
-    background-color: #1b2022;
+    position: fixed;
+    bottom: 0.5rem;
+    right:0.5rem;
 }
 
 

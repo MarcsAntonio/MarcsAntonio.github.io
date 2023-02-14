@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <title>Portafolio</title>
-        <link rel="shortcut icon" class="ico1" type="png" href="Imag/Logo.png">
+        <link rel="shortcut icon" class="ico1" type="png" href="Imag/LogoFrente 3d.png">
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
     <body> 
         <!-- Contenedor del menu encabezado -->
         <header>
-            <div class="nav-header">
+            <div class="nav-header" id="nav-header">
                 <div class="logo">
                     <a href="#inicio"><img src="Imag/Logo.png" alt="imagen logo">MarcsATC</a>
                 </div>
@@ -59,7 +59,7 @@
         <section class="conoceme" id="conoceme">
             <div class="contenedor-sobremi">
                 <h2>¡Hola Soy Marcos A. Trujillo!</h2>
-                <p>Soy un estudiante en ingeniería de sistemas y un autodidacta como desarrollador sin experiencia laboral, ya que siempre he trabajado en el área de tecnología como Soporte Técnico, durante un aproximado de 6 años, y actualmente me encuentro en un aprendizaje contante sobre los distintos lenguajes de programación que me interesan, los cuales son; HTML, CSS, JavaScript, C# y SQLServer.</p>
+                <p>Soy un estudiante en ingeniería de sistemas y un autodidacta sin experiencia laboral, ya que siempre he trabajado en el área de tecnología como Soporte Técnico, durante un aproximado de 6 años, y actualmente me encuentro en un aprendizaje constante sobre los distintos lenguajes de programación que me interesan, los cuales son; HTML, CSS, JavaScript, C# y SQLServer.</p>
                 <p>Me encuentro ansioso de poder trabajar con una empresa como ustedes, aportando y desarrollando mejoras para el beneficio de la compañía, satisfaciendo la distintas necesidades que se presenten durante el desarrollo de la empresa.</p>
                 <div class="fila">
                     <div class="col">
@@ -281,23 +281,24 @@
                     <br>
                     <!--Mapa-->
                     <div class="col">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7846.151218393982!2d-66.87967472554894!3d10.49470591943864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58e2736a4b19%3A0x971709a23ba9651a!2sLas%20Delicias%2C%20Caracas%201050%2C%20Distrito%20Capital!5e0!3m2!1ses!2sve!4v1669314837318!5m2!1ses!2sve" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251098.17326347934!2d-66.89036584999998!3d10.468391750000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58adcd824807%3A0x93dd2eae0a998483!2sCaracas%2C%20Distrito%20Capital!5e0!3m2!1ses!2sve!4v1676225223880!5m2!1ses!2sve" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
                 </div>
             </div>
         </section>
-        <script src="/javascript.js"></script>
         <footer>
-            <!-- Boton para subir directamente al menu principal -->
-            <div class="contenedor-top">
-                <div class="button_star"></div>
-            </div>
-
-            <div class="link">
-                <div class="conexion1"></div>
-                <div class="conexion2"></div>
-                <div class="conexion3"></div>
+            <div class="footer-link">
+                <a href="https://www.linkedin.com/in/marcos-antonio-trujillo-contreras-767026148/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MarcsAntonio"><i class="fa-brands fa-github"></i></a>
             </div>
         </footer>
+    <!-- Boton para subir directamente al menu principal -->
+    <div class="contenedor-top">
+        <button class="button_star">
+            <a href="#nav-header">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+        </button>
+    </div>
+    <script src="/javascript.js"></script>
     </body>
 </html>
